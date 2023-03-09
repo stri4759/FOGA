@@ -1,17 +1,29 @@
-body {
-    background-color: darkblue;
-    /*background-image: url('assets/gujarat-map-transparent.png');*/
+* {
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  body {
+    /*
+    background-color: rgba(252, 245, 236, 0.3);
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.5)), url('assets/colormap_gujarat.png');
     background-repeat: no-repeat;
+    background-size:60%;
     background-attachment: fixed;
-    background-size: cover;
-}
+    background-position: center;
+    */
+    background-color: rgba(255, 255, 255, 0.3); /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(45deg, rgba(255, 0, 0,0.3) 0px, rgba(255, 0, 0,0.3) 10px, rgba(255, 0, 0,0.3) 20px, rgba(255, 255, 255,0.3) 15px, rgba(0, 0, 255,0.3) 40px);
+    background-attachment: scroll;
+    background-position: center;
+
+ }
 
 h1 {
     color: rgba(0, 0, 0, 1);
     font-size: 500%;
     font-family: fantasy;
     text-align: center;
-    background-color: rgba(255, 64, 0, 1)
 }
 
 h2 {
@@ -19,11 +31,10 @@ h2 {
     font-size: 300%;
     font-family: 'Times New Roman';
     text-align: center;
-    background-color: rgba(186, 1, 1, 1);
 }
 
 h3 {
-    color: rgba(0, 200, 0, 1);
+    color: rgb(7, 66, 11);
     font-size: 200%;
     font-family: Impact;
 }
@@ -80,13 +91,12 @@ li :hover {
 }
 
 .titleclass {
-    background-color: rgb(255, 0, 179);
-    color: rgba(0, 0, 0, 1);
+    /*background-color: rgba(255, 255, 255,0);*/
+    color: rgb(0, 0, 0);
     font-size: 500%;
     font-family: fantasy;
     text-align: center;
-
-}
+  }
 
 .listclass {
     float:left;
@@ -98,3 +108,28 @@ li :hover {
     background-color: rgb(97, 19, 242);
     color: aliceblue;
 }
+
+.navbar li {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    size: 300px;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.navbar li a:link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar li a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.navbar li :hover {
+    background-color: #afafafaf;
+    padding: 2%;
+    color: aqua;
+}
+
