@@ -4,19 +4,19 @@
   }
   
   body {
-    /*
+    
     background-color: rgba(252, 245, 236, 0.3);
-    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.5)), url('assets/colormap_gujarat.png');
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('assets/colormap_gujarat.jpg');
     background-repeat: no-repeat;
-    background-size:60%;
+    background-size: 60%;
     background-attachment: fixed;
     background-position: center;
-    */
-    background-color: rgba(255, 255, 255, 0.3); /* For browsers that do not support gradients */
+    /*
+    background-color: rgba(255, 255, 255, 0.3); 
     background-image: repeating-linear-gradient(45deg, rgba(255, 0, 0,0.3) 0px, rgba(255, 0, 0,0.3) 10px, rgba(255, 0, 0,0.3) 20px, rgba(255, 255, 255,0.3) 15px, rgba(0, 0, 255,0.3) 40px);
     background-attachment: scroll;
     background-position: center;
-
+*/
  }
   
   li {
@@ -185,7 +185,7 @@
   /*background-color: rgba(255, 255, 255,0);*/
   color: rgb(0, 0, 0);
   font-size: 500%;
-  font-family: fantasy;
+  font-family: sans-serif;
   text-align: center;
 }
 
