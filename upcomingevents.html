@@ -10,27 +10,94 @@
 
 <body>
     <!-- Menu Bar to be added-->
-    <ul class = "navbar">
+    <ul class="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutus.html">About Us</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
         <li><a href="founders.html">Founders</a></li>
-        <li><a href="committee.html">Committees</a></li>
-        <li><a href="events.html">Events</a></li>
+        <div class="dropdown">
+          <button class="dropbtn"> Committees
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Board of Trustees</a>
+            <a href="#">Cultural Committee</a>
+            <a href="#">Youth & Sports Committee</a>
+            <a href="#">Women Empower Committee</a>
+            <a href="#">Medical Committee</a>
+            <a href="#">Senior Citizen Committee</a>
+            <a href="#">Business Outreach Committee</a>
+            <a href="#">Matrimonial Committee</a>
+            <a href="#">Advisory Board</a>
+            <a href="#">Legal Advisors</a>
+            <a href="#">Political Action Committee</a>
+            <a href="#">Television Media Committee</a>
+            <a href="#">Print Media Committee</a>
+            <a href="#">Social Media & Tech. Committee</a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn"> Events
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="upcomingevents.html">Upcoming Events</a>
+              <a href="pastevents.html">Past Events</a>
+              
+            </div>
+          </div>
         <li><a href="media.html">Media</a></li>
         <li><a href="newsandhelp.html">News & Help</a></li>
-
-    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </ul>
     <!-- Company name and logo-->
-    <h1 class="titleclass"> <i><b>FOGA-USA</b></i></h1>
+    <h1 class="titleclass" style="padding-top: 4%;"><b>FOGA-USA</b></h1>
     <img src="assets/fogausa.png" alt="FOGA-USA"
         style="display:block;margin-left:auto; margin-right:auto; width:300px; height:300px;">
     <!-- Mission of the company-->
     <br>
     <br>
-    <a href="assets/event1.jpeg"><img src="assets/event1.jpeg" alt="event1"
-            style="display:block;margin-left:auto; margin-right:auto; width:300px; height:300px;"></a>
-    <hr>
+    <br>
+    <br>
+    <div class="container">
+      <h3 style=" text-align:center; font-family: sans-serif; padding-top: 2%;">Upcoming Events</h3>
+      <!--events-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  
+      <section style="padding-top: 2%;" class="hero-section">
+        <div class="card-grid">
+  
+  
+          <a class="card" href="assets/event1.jpeg">
+            <div class="card__background" style="background-image: url('assets/event1.jpeg')"></div>
+            <div class="card__content">
+  
+            </div>
+          </a>
+          <a class="card" href="assets/Indiatour.jpg">
+            <div class="card__background" style="background-image: url(assets/Indiatour.jpg)"></div>
+            <div class="card__content">
+  
+            </div>
+            </li>
+            <a class="card" href="assets/sports.jpg">
+              <div class="card__background" style="background-image: url(assets/sports.jpg)"></div>
+              <div class="card__content">
+  
+              </div>
+            </a>
+            <div>
+      </section>
+    </div>
 </body>
 
 </html>

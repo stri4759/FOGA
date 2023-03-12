@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <title>Committee</title>
+ 
+  <link rel="stylesheet" href="navbar.css" type="text/css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://www.w3schools.com/appml/2.0.2/appml.js"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-146052-10', 'getbootstrap.com');
+  ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.open-modal').click(function(){
+      $('#myModal').modal('show');
+    }); 
+  });
+  </script>
+
+</head>
+
+<body>
+
+ 
+
+
+  
+      
+      <!-- Menu Bar -->
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="founders.html">Founders</a></li>
+        <div class="dropdown">
+            <button class="dropbtn"> Committees
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Board of Trustees</a>
+              <a href="#">Cultural Committee</a>
+              <a href="#">Youth & Sports Committee</a>
+              <a href="#">Women Empower Committee</a>
+              <a href="#">Medical Committee</a>
+              <a href="#">Senior Citizen Committee</a>
+              <a href="#">Business Outreach Committee</a>
+              <a href="#">Matrimonial Committee</a>
+              <a href="#">Advisory Board</a>
+              <a href="#">Legal Advisors</a>
+              <a href="#">Political Action Committee</a>
+              <a href="#">Television Media Committee</a>
+              <a href="#">Print Media Committee</a>
+              <a href="#">Social Media & Tech. Committee</a>
+            </div>
+          </div>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="newsandhelp.html">News & Help</a></li>
+
+    </ul> 
+       </div> 
+     </div>  
+   </nav>  </header>
+
+  
+   <img src="assets/fogausa.png" alt="FOGA-USA"
+   style="display:block;margin-left:auto; margin-right:auto; width:300px; height:300px;">
+   <h3 style=" font-size: 500%; color: black; text-align: center; padding: 2%;" > <b>Board of Trustees</b></h3>
+   
+    
+  
+
+  <div class="container"  appml-data="temp">
+    <div class="col-md-6" appml-repeat="temp2" id="temp">
+      <div class="media">
+        <div class="pull-left">
+          <a href="#{{Label}}" data-toggle="modal">
+            <img class="media-object" src="{{Photo}}" 
+          alt="Media Object" height="130px" width = "130px">
+</a>
+        </div>
+        <div class="media-body">
+          <h3>{{Role}} - {{Name}}</h3>
+          <!--p>Description - {{Description}}</p-->
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#{{Label}}">
+            Launch bio
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="{{Label}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title" id="{{Label}}">{{Name}} - {{Role}}</h3>
+                </div>
+                <div class="modal-body">
+                  <div class="panel panel-danger">
+                    <div class="panel-heading">Intro</div>
+                    <div class="panel-body">
+                      {{Description}}
+                    </div>
+                  </div>
+                  
+                  
+                  
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  var temp = {
+    "temp2":[
+    {"Photo":"Roisin.jpg",
+    "Role":"Member","Name" : "Dr. Vasudev Patel",
+    "Description" : "As Captain, Aideen is in charge of all club activities and encourages members to achieve their trampoline goals. She really cares for the club and its future. At a staggering 5ft nothing, Aideen is possibly the club's teeniest-tiniest ever captain and can be found playing the violin (or harp, or piano), making the world's best burritos and doing somersaults. She's also one of our new coaches! #multitalented. Keep an eye out throughout the year for her spectacular leotard collection!",
+    "Course":" Music","Level":"Intervanced","Label":"One","Next":"#Two",
+  },
+
+  {"Photo":"https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10923207_10153405858459156_4197210427625795347_n.jpg?oh=eb9faac6204fad5fe122a914cb3e0738&oe=56E93EFA",
+  "Role": "Head Coach","Name" : "Jack Kettle",
+  "Description" : "Jack is really good at trampolining. He has a flawless record of winning the elite category of competitions every single time he's worn a woman's leotard! He's also a great coach and loves being tickled! This year He'll be keeping all of our coaches in check and making sure they're on their way to being just as talented a coach as himself. After doing such a great job last year as Co-Head Coach, we decided to have him back again for another year. Jack is a qualified level 2 coach and has mentored many of our new coaches over the past year. His other talents include: being upside down, coding, hosting dinner parties and of course - globetrotting. Did we mention he went to Croatia?",
+
+},
+
+{"Photo":"https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1475783_710178315668201_1837510592_n.jpg?oh=ede37bc322f9f7a3bddd892843241270&oe=56F5AC02",
+"Role": "Honourary President","Name" : "Sinéad Cullen",
+"Description" : "The Honourary President award is voted for at the end of each year, and is given to a person that embodies the values and intentions of the club. Sinéad won this award for her years of dedication to the club and her willingness to help out in any aspect of Trampolining. She is kind and inclusive to all of our members, and really makes people feel at home here in the Club",
+"Course":"Something like Computer Science","Level":"Elite Pro","Label":"Three",
+"Questions":"Will you please coach me to win every competition?<br>Where do you get your leotards?"
+},
+
+{"Photo":"https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/12241469_1029700607080848_2598738366862044336_n.jpg?oh=8c770ec2ad8e900665e4fca92af631de&oe=56C2C4F7&__gda__=1454564765_8b8ebfdb02b490c90df89a22290801a8",
+"Role": "Assistant Head Coach","Name" : "Brian Hearns",
+"Description" : "Brian will be assisting Jack in his head coach duties, and sorting out our members with their Gymnastics Ireland qualifications, competitions and memberships.From the far off land of Ohio, he is one of two Americans on our committee this year. As an ex-gymnast and elite competitor, he is known for his outstanding form scores. You can expect to see Brian double somersaulting on the Trampoline and maybe even some floor gymnastics too!",
+"Course":"Science","Level":"Advanced","Label":"Four",
+"Questions":"How many medals have you won?<br>What is Gymnastics Ireland?<br>Did you meet Michael Phelps at the Olympics?"
+},
+
+{"Photo":"assets/fogausa.png",
+"Role": "Club Rep","Name" : "Lauren Gage",
+"Description" : "Lauren's job is to make sure all of the new members feel welcomed to the the club as well as sorting out all of our club hoodies, leotards and other gear. Lauren is probably the first person you will meet in the club and what a friendly person she is! Lauren came to us from Seattle on an exchange programme in 2013. She loved us so much that she has now moved to Ireland. Lauren is also known for her sparkly leotards so keep an eye out for her glittering away on the Trampoline",
+"Course":"Music","Level":"Advanced","Label":"Five",
+"Questions":"?<br>Do you have any musical instruments for me to play?"
+},
+
+{"Photo":"https://scontent.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/11219227_10153230747908931_2617481691363468881_n.jpg?oh=2678bb3af6f5f5a8c2ccd7a503524f5d&oe=5678D5FA",
+"Role": "Secretary","Name" : "Dave Woods",
+"Description" : "Meet our secretary, Dave! He's the guy sending you your super witty and informative emails every week. Think of him as the Trampoline Club 'Google'. Make sure to test his skills at training by throwing a surprise question at him - he will reply in exactly 0.2 seconds! <br></br> Dave competes at Advanced level and is also a coach and a judge. He is one of our new PhD trampolinists so will be looking after us all for the next 4 years!",
+"Course":"Human Genetics","Level":"Intermediate","Label":"Six",
+"Questions":"Can I use your hair to light your fire? - everything else she'll probably already have told you."
+},
+
+{"Photo":"https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1503905_543666355729639_1133552365_n.jpg?oh=da0b801e26d247aa0de2aae7ed570353&oe=56E503F2",
+"Role": "Treasurer","Name" : "Rachel Henry",
+"Description" : "From her humble beginnings of only knowing about 20 numbers at the age of 11 Rachel has since amassed a knowledge of over 12,000 numbers and believes that there may even exist many more! <br><br>This numeracy will definitely come in handy when trying to work out how much money people owe her and how many legs she'll need to break to get it all back! In times when the accounts are all in order Rachel is a natural on the trampoline and is really friendly and approachable.",
+"Course":"MSISS","Level":"Advanced","Label":"Seven",
+"Questions":"Story horse?<br>How much do I owe you?"
+},
+
+{"Photo":"https://scontent-ams2-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/11693827_10206025671434232_6196221012113981541_n.jpg?oh=3afd56b1468d186d95c6c2d59cef798e&oe=565A7457",
+"Role": "Ents","Name" : "Iarlaith Doherty",
+"Description" : "Some say Iralaith can get a person drunk faster than they can say 'I'll only have one'.<br>	<br>Iarlaith is potentially the most entertaining officer on this years committee, because of this we have voted this fine young man to organise all our trampy fun!<br><br>	 He also loves telling jokes!  ",
+"Course":"Physiotherapy","Level":"Advanced","Label":"Eight",
+"Questions":"Is anyone up for pints after training?<br>Please, tell me one of your famous jokes?"
+},
+
+{"Photo":"https://scontent-ams2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/p960x960/10974322_1035095669838900_130288288398316303_o.jpg",
+"Role": "Comps Officer","Name" : "Clíodhna Whittle",
+"Description" : "Clíodhna organises all of our trips away and also any competitions might host. Clíodhna will be able to keep you right on what level to compete at, what to wear, where you're supposed to be .. The list goes on. Clíodhna is the baby of the committee. Despite only being in second year, she has already completed many of the trampolining milestones - becoming a coach, getting an injury and becoming a committee member. We expect many more milestones this year!",
+"Course":"Chemistry","Level":"Intermediate","Label":"Nine",
+"Questions":"When is the next competition because I can't wait!?!?<br>"
+},
+
+{"Photo":"https://scontent-ams2-1.xx.fbcdn.net/hphotos-prn2/v/t1.0-9/625532_551740508181309_1300549439_n.jpg?oh=ae214de26c748062409e64a737b75b09&oe=5655E5AF",
+"Role": "Webmaster","Name" : "Paddy Ward",
+"Description" : "Paddy was one of our freshers last year and enjoyed trampolining so much that he decided he wanted to help us run the show! He is on no less than three different committees this year so we're looking forward to plenty of inter-clubs&socs events throughout the year. Paddy is extremely competitive and always aims for the top at competitions. Unfortunately though we aren't going to let him forget the time he forgot to get off the trampoline at the Scottish Open last year! Sorry Paddy.",
+"Course":"Computer Science and Business","Level":"Novice","Label":"Ten",
+"Questions":"How big is the internet?<br>When will I be told my competition results?<br>How cool do I have to be to get my picture included on the club website?"
+}
+]};
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="../assets/js/docs.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+</body>
+</html>
