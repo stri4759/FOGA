@@ -6,56 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FOGAUSA Events</title>
     <link rel="icon" type="image/x-icon" href="assets/fogausa.png">
+  <!-- Script for including Navigation Bar and footer files-->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain attribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
 </head>
 
 <body>
-    <!-- Menu Bar to be added-->
-    <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-        <li><a href="founders.html">Founders</a></li>
-        <div class="dropdown">
-          <button class="dropbtn"> Committees
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Board of Trustees</a>
-            <a href="#">Cultural Committee</a>
-            <a href="#">Youth & Sports Committee</a>
-            <a href="#">Women Empower Committee</a>
-            <a href="#">Medical Committee</a>
-            <a href="#">Senior Citizen Committee</a>
-            <a href="#">Business Outreach Committee</a>
-            <a href="#">Matrimonial Committee</a>
-            <a href="#">Advisory Board</a>
-            <a href="#">Legal Advisors</a>
-            <a href="#">Political Action Committee</a>
-            <a href="#">Television Media Committee</a>
-            <a href="#">Print Media Committee</a>
-            <a href="#">Social Media & Tech. Committee</a>
-          </div>
-        </div>
+  <!-- Navigation Bar-->
+  <div w3-include-html="navbar.html"></div>
+  <!-- Body of the Page -->
+  <pre>
+    <p>
+
+
         
-        <div class="dropdown">
-            <button class="dropbtn"> Events
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="upcomingevents.html">Upcoming Events</a>
-              <a href="pastevents.html">Past Events</a>
-              
-            </div>
-          </div>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="newsandhelp.html">News & Help</a></li>
-    
-      </ul>
-      <br>
-      <br>
-      <br>
-      <br>
-    <!-- Company name and logo-->
+    </p>
+</pre>
+
     <h1 class="titleclass"><b>FOGA-USA</b></h1>
     <img src="assets/fogausa.png" alt="FOGA-USA"
         style="display:block;margin-left:auto; margin-right:auto; width:300px; height:300px;">
@@ -99,13 +93,9 @@
       </section>
     </div>
     <div class="footer">
-
-        <pre>
-              <p style="text-align:right;color: black; ">Designed and maintained by Sahil Trivedi     
-    
-              <a  href="mailto:sahilscadshop@gmail.com">sahilscadshop@gmail.com</a>                            </p>
-          </pre>
-      </div>
+    <!-- Foot Note-->
+    <div w3-include-html="footerfile.html"> </div>
+    <script> includeHTML(); </script>
 </body>
 
 </html>
