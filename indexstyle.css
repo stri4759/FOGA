@@ -107,13 +107,13 @@ li a:visited {
 }
 /*navbar*/
 .navbar li {
-    float: left;
-    display: block;
-    color: rgb(0, 0, 0);
-    size: 300px;
-    text-align: center;
+  float: left;
+  display: block;
+  color: rgb(0, 0, 0);
+  size: 300px;
+  text-align: center;
 
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navbar li a:link {
