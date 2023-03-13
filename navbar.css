@@ -20,6 +20,7 @@ ul {
     padding: 0;
     overflow: hidden;
     /*background-color: rgba(0,0,0,0.6); */
+    font-family: sans-serif;
 }
 
 li {
@@ -151,13 +152,29 @@ li a:visited {
       h2 {
         color: rgb(0, 0, 0);
         font-size: 300%;
-        font-family: 'Times New Roman';
+        font-family: sans-serif;
         text-align: center;
-        background-color: rgba(186, 1, 1, 1);
+        
       }
       
       h3 {
         color: rgb(0, 0, 0);
         font-size: 200%;
-        
+        font-family: sans-serif;
+        text-align: center;
       }
+      h4 {
+        color: rgb(0, 0, 0);
+        font-size: 150%;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      p {
+        color: rgb(0, 0, 0);
+        font-size: 100%;
+        font-family: sans-serif;
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+      }
+      
