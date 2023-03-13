@@ -1,186 +1,510 @@
 <!DOCTYPE html>
+
+
 <html lang="en-US">
-<link rel="stylesheet" href="committeestyle.css">
+<link rel="stylesheet" href="navbar.css">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> FOGAUSA Main Page</title>
-    <link rel="icon" type="image/x-icon" href="assets/fogausa.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> FOGAUSA Main Page</title>
+  <link rel="icon" type="image/x-icon" href="assets/fogausa.png">
+  <!-- Script for including Navigation Bar and footer files-->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain attribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
 </head>
 
 <body>
+  <!-- Navigation Bar-->
+  <div w3-include-html="navbar.html"></div>
+  <!-- Body of the Page -->
+  <pre>
+    <p>
 
 
-    <!-- Menu Bar to be added-->
-    <ul class ="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-        <li><a href="founders.html">Founders</a></li>
         
-        <div class="dropdown">
-            <button class="dropbtn"> Committees
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Board of Trustees</a>
-              <a href="#">Cultural Committee</a>
-              <a href="#">Youth & Sports Committee</a>
-              <a href="#">Women Empower Committee</a>
-              <a href="#">Medical Committee</a>
-              <a href="#">Senior Citizen Committee</a>
-              <a href="#">Business Outreach Committee</a>
-              <a href="#">Matrimonial Committee</a>
-              <a href="#">Advisory Board</a>
-              <a href="#">Legal Advisors</a>
-              <a href="#">Political Action Committee</a>
-              <a href="#">Television Media Committee</a>
-              <a href="#">Print Media Committee</a>
-              <a href="#">Social Media & Tech. Committee</a>
-            </div>
-          </div>
-        
-        <li><a href="events.html">Events</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="newsandhelp.html">News & Help</a></li>
+    </p>
+</pre>
+  <img src="assets/fogausa.png" alt="FOGA-USA"
+    style="display:block;margin-left:auto; margin-right:auto; width:300px; height:300px;">
+  <h2>Committees</h2>
 
-    </ul>
-    <!-- Company name and logo-->
-    <h1 class="titleclass"> <i><b>FOGA-USA Committees</b></i>
-    </h1>
-    <!-- Mission of the company-->
-    <h2> FOGA USA Committees</h2>
-    <ul>
-        <li style="background-color:black; text-align:left;padding: 10px;"> Board of Trustees
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Dr. Vasudev Patel – Atlanta, GA</li>
-                <li style="float:none; text-align:left;">Chirag Dave – Austin, TX</li>
-                <li style="float:none; text-align:left;">Harshad Patel (Pakaji) – New York, NY</li>
-                <li style="float:none; text-align:left;">Babu Patel – Clinton, MS</li>
-                <li style="float:none; text-align:left;">Prakash (P. V.) Patel – Houston, TX</li>
-                <li style="float:none; text-align:left;">Bhupesh Shah – Delaware Valley, PA</li>
-                <li style="float:none; text-align:left;">Divyesh Tripathi – New York, NY</li>
-                <li style="float:none; text-align:left;">Anil Shah</li>
-                <li style="float:none; text-align:left;">Jaimin Upadhyay - Sacramento, CA</li>
-            </ul>
-        </li>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Cultural Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Divyesh Tripathi – New York, NY</li>
-                <li style="float:none; text-align:left;">Dev Bharwad - Kansas City, MO</li>
-                <li style="float:none; text-align:left;">Hemal Doshi – Dallas, TX</li>
-                <li style="float:none; text-align:left;">Kirit Udeshi – Washington, DC</li>
-                <li style="float:none; text-align:left;">Vijay Shah – Tampa Bay, FL</li>
-                <li style="float:none; text-align:left;">Bhupesh Shah – Delaware Valley, PA</li>
-                <li style="float:none; text-align:left;">Jatin Shah</li>
-            </ul>
-        </li>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Youth & Sports Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Kalpesh Rana - Houston, TX</li>
-                <li style="float:none; text-align:left;">Atman Raval – Dallas, TX</li>
-                <li style="float:none; text-align:left;">Keval Brhambhatt – Tampa Bay, FL</li>
-            </ul>
-        </li>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Women Empower Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Nancy Patel</li>
-                <li style="float:none; text-align:left;">Dipti Jani</li>
-                <li style="float:none; text-align:left;">Dr. Gira Patel</li>
-                <li style="float:none; text-align:left;">Geeta Patel</li>
-                <li style="float:none; text-align:left;">Mamta Patel</li>
-                <li style="float:none; text-align:left;">Gayatri Pandya</li>
-            </ul>
-        </li>
+  <!--p>Description - {{Description}}</p-->
+  <br>
+  <br>
+  <div class="container">
+    <div id="C1">
+      <h3 style="padding-top: 4%;">Board Of Trustees</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Medical Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Dr. Himanshu Pandya</li>
-                <li style="float:none; text-align:left;">Dr. Kiran Parikh</li>
-            </ul>
-        </li>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Dr. Vasudev Patel – Atlanta, GA</td>
+          <td>Harshad Patel (Pakaji) – New York, NY</td>
+          <td>Prakash (P. V.) Patel – Houston, TX</td>
+        </tr>
+        <tr>
+          <td>Divyesh Tripathi – New York, NY</td>
+          <td>Jaimin Upadhyay – Sacramento, CA</td>
+          <td>Chirag Dave – Austin, TX</td>
+        </tr>
+        <tr>
+          <td>Babu Patel – Clinton, MS</td>
+          <td>Bhupesh Shah – Delaware Valley, PA</td>
+          <td>Anil Shah</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Senior Citizen Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Hari Patel - Chicago, IL</li>
-                <li style="float:none; text-align:left;">Jagish Patel</li>
-            </ul>
-        </li>
 
-    </ul>
-    <hr>
-    <ul>
-        <li style="background-color:black; text-align:left;padding: 10px;"> Business Outreach Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Hemal Doshi - Dallas, TX</li>
-            </ul>
-        </li>
+    <div id="C2">
+      <h3>Cultural Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Divyesh Tripathi – New York, NY</td>
+          <td>Dev Bharwad – Kansas City, MO</td>
+          <td>Bhupesh Shah – Delaware Valley, PA</td>
+        </tr>
+        <tr>
+          <td>Hemal Doshi – Dallas, TX</td>
+          <td>Kirit Udeshi – Washington, DC</td>
+          <td>Vijay Shah – Tampa Bay, FL</td>
+        </tr>
+        <tr>
+          <td>Jatin Shah</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C3">
+      <h3>Youth & Sports Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Matrimonial Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Geeta Patel - Houston, TX</li>
-                <li style="float:none; text-align:left;">Mamta Patel</li>
-            </ul>
-        </li>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Kalpesh Rana – Houston, TX</td>
+          <td>Keval Bhrambhatt – Tampa Bay, FL</td>
+          <td>Atman Raval – Dallas, TX</td>
+        </tr>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Advisory Board
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Dr. Bharat Barai - Chicago, IL</li>
-                <li style="float:none; text-align:left;">Padma Shri H. R. Shah</li>
-                <li style="float:none; text-align:left;">Manish Sharma</li>
-                <li style="float:none; text-align:left;">Ashok Patel</li>
-                <li style="float:none; text-align:left;">Dr. H. D. Patel</li>
-                <li style="float:none; text-align:left;">Padma Shri Dr. Sudhir Parikh - NJ</li>
-                <li style="float:none; text-align:left;">Digant Sompura</li>
-                <li style="float:none; text-align:left;">Subhash Patel</li>
-            </ul>
-        </li>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C4">
+      <h3>Women Empowerment Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Nancy Patel</td>
+          <td>Dipti Jani</td>
+          <td>Dr. Gira Patel</td>
+        </tr>
+        <tr>
+          <td>Geeta Patel</td>
+          <td>Mamta Patel</td>
+          <td>Gayatri Pandya</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C5">
+      <h3>Medical Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Dr. Himanshu Pandya</td>
+          <td>Dr. Kiran Parikh</td>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Legal Advisors
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Mukund Mehta</li>
-                <li style="float:none; text-align:left;">Prathamesh Jaiswal</li>
-            </ul>
-        </li>
+        </tr>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Political Action Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Dr. Vasudev Patel - Atlanta, GA</li>
-                <li style="float:none; text-align:left;">Palash Gupta</li>
-                <li style="float:none; text-align:left;">Rajendra Vora - Beverly Hills, CA</li>
-                <li style="float:none; text-align:left;">Atman Raval - Dallas, TX</li>
-            </ul>
-        </li>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C6">
+      <h3>Senior Citizens Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Hari Patel – Chicago, IL</td>
+          <td>Jagdish Patel</td>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Television Media Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Divyesh Tripathi – New York, NY</li>
-                <li style="float:none; text-align:left;">Dipti Jani</li>
-                <li style="float:none; text-align:left;">Gayatri Pandya</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-    <ul>
-        <li style="background-color:black; text-align:left;padding: 10px;"> Print Media Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Rajendra Vora – Beverly Hills, CA</li>
-                <li style="float:none; text-align:left;">Vijay Shah – Tampa Bay, FL</li>
-                <li style="float:none; text-align:left;">Kirit Udeshi – Washington, D.C.</li>
-            </ul>
-        </li>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C7">
+      <h3>Business Outreach Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Hemal Doshi – Dallas, TX</td>
 
-        <li style="background-color:black; text-align:left;padding: 10px;"> Social Media & Tech. Committee
-            <ul style="background-color:blue;">
-                <li style="float:none; text-align:left;">Jaimin Upadhyay – Sacramento, CA</li>
-                <li style="float:none; text-align:left;">Divyesh Tripathi – New York, NY</li>
-                <li style="float:none; text-align:left;">Vidhyut Rabari</li>
-            </ul>
-        </li>
-    </ul>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C8">
+      <h3>Matrimonial Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Geeta Patel – Houston, TX</td>
+          <td>Mamta Patel</td>
+
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C9">
+      <h3>Advisory Board</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Dr. Bharat Barai – Chicago, IL</td>
+          <td>Padma Shri H. R. Shah </td>
+          <td>Manish Sharma</td>
+        </tr>
+        <tr>
+          <td>Ashok Patel</td>
+          <td>Dr. H. D. Patel</td>
+          <td>Padma Shri Dr. Sudhir Parikh - NJ</td>
+        </tr>
+        <tr>
+          <td>Digant Sompura</td>
+          <td>Subhash Patel</td>
+
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C10">
+      <h3>Legal Advisors</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Mukund Mehta</td>
+          <td>Prathamesh Jaiswal</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C11">
+      <h3>Political Action Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Dr. Vasudev Patel – Atlanta, GA</td>
+          <td>Palash Gupta</td>
+
+        </tr>
+        <tr>
+          <td>Rajendra Vora – Beverly Hills, CA</td>
+          <td>Atman Raval – Dallas, TX</td>
+
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C12">
+      <h3>Public Relations Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Divyesh Tripathi – New York, NY</td>
+          <td>Babu Patel – Clinton, MS</td>
+
+        </tr>
+        <tr>
+          <td>Jaimin Upadhyay – Sacramento, CA</td>
+          <td>Palash Gupta</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C13">
+      <h3>TV Media Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Divyesh Tripathi – New York, NY</td>
+          <td>Gayatri Pandya</td>
+          <td>Dipti Jani</td>
+        </tr>
+
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C14">
+      <h3>Print Media Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Rajendra Vora – Beverly Hills, CA</td>
+          <td>Kirit Udeshi – Washington, D.C.</td>
+          <td>• Vijay Shah – Tampa Bay, FL</td>
+        </tr>
+
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="C15">
+      <h3>Social Media & Technology Committee</h3>
+      <h4> What are We About</h4>
+      <br>
+      <br>
+      <P>
+        nnoqnwdoqni3odimnwoebfuiqwe qweuofbq wefouqwbe foqweb fqwebfq wefqweuibf qwefiqweub fqweduifqw eifqweif;b
+        qwefuqiwbe fqwefuib qwefiqwuebf qweikjfbqw eifqwieuf qweifjbqw efqwefiu qwefqweuf qwefhqwe fgwqjbef wqef
+        qwefhqwef qwef qwefj qwefjkqwef qwehg fkqwe fqkweg fkhqgw e qhkwegqfkubqwkefc qwekfgvkuqweybkf kqwefvqwefhjwq
+        efwqegf qwefqw efgwqevfkhjqwefvqwejfwq ekfwqhegbfwqe
+      </P>
+      <br>
+      <br>
+      <table style=" margin-left: 20%; text-align: center;   width:60%">
+        <tr>
+          <td>Jaimin Upadhyay – Sacramento, CA</td>
+          <td>Vidhyut Rabari</td>
+          <td>Divyesh Tripathi – New York, NY</td>
+        </tr>
+
+      </table>
+    </div>
+
+
+
+
+</div>
+    <!-- Foot Note-->
+    <div w3-include-html="footerfile.html"> </div>
+    <script> includeHTML(); </script>
+
 </body>
+<!--<style>
+  table, th, td {
+    border:1px solid black;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  .container{
+    width: 60%;
+    background-color: white;
+    font-family: sans-serif;
+    border-radius: 25px;
+    margin-left: 20%;
+  }
+  </style>-->
 
 </html>

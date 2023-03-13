@@ -159,7 +159,7 @@ li a:visited {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(227, 227, 227);
+    background-color: rgb(128, 172, 243);
   }
   
   .dropdown-content {
@@ -180,7 +180,9 @@ li a:visited {
     text-align: left;
   }
   
-      
+  .dropdown-content a:hover {
+    background-color: rgb(128, 172, 243);
+  }    
 
       
       .dropdown:hover .dropdown-content {

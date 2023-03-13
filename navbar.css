@@ -177,4 +177,17 @@ li a:visited {
         width: 50%;
         margin-left: 25%;
       }
+
+      table, th, td {
+        border:1px solid black;
+        font-size: 18px;
+        font-family: sans-serif;
+      }
+      .container{
+        width: 60%;
+        background-color: white;
+        font-family: sans-serif;
+        border-radius: 25px;
+        margin-left: 20%;
+      }
       
