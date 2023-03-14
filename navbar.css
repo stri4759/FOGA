@@ -182,6 +182,7 @@ li a:visited {
         border:1px solid black;
         font-size: 18px;
         font-family: sans-serif;
+        width: 35%;
       }
       .container{
         width: 60%;
