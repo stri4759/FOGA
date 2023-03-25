@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<link rel="stylesheet" href="indexstyle.css">
+<link rel="stylesheet"  href="contactus.css">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,7 +49,7 @@
         
     </p>
 </pre>
-    <h1 class="titleclass"> <i><b>Contact Us</b></i></h1>
+    <h1 class="titleclass"> <b>Contact Us</b></h1>
     <img src="assets/fogausa.png" alt="FOGA-USA"
         style="display:block;margin-left:auto; margin-right:auto; width:300px; height:300px;">
     <!-- Mission of the company-->
@@ -57,6 +57,26 @@
     <br>
     <h3 style="text-align:center;"> Join our effort by subscribing <a href="https://fogausa.org/contact-us">here</a></h3>
 
+    <main>
+    
+    <form>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="FogaUsa" minlength="3" axlength="20" required />
+
+      <label for="email adres">Email</label>
+      <input type="text" name="email" id="email" placeholder="FogaUsa@me.com" required />
+
+      <label for="reference">Reference Number</label>
+      <input type="number" name="reference" id="reference" placeholder="+370********" axlength="12" required />
+
+      <label for="i'm not robot">I'm not Robot</label>
+      <input type="checkbox" name="I'm not Robot" id="I'm not Robot" required />
+
+      <textarea placeholder="Your message goes here..."></textarea>
+
+      <input type="submit" value="Send!">
+  </main>
+  </form>
       <!-- Foot Note-->
     <div w3-include-html="footerfile.html"> </div>
     <script> includeHTML(); </script>
