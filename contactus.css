@@ -7,7 +7,10 @@
   
   main {
     margin-top: 150px;
-    margin-left: 36%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
     padding: 30px;
     background-color: rgba(210, 210, 210, 0.528);
     max-width: 500px;
@@ -63,7 +66,7 @@
     color: blueviolet;
     background-color: rgba(137, 43, 226, 0.692);
   }
-  input name:focus
+  input name:focus{
   
   }
   
