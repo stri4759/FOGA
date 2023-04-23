@@ -223,9 +223,9 @@ html{
         scroll-behavior: smooth;
       }
       
-      body{
+      //*body{
         height: 100%;
-      }
+      }*//
       
       .hero-section{
         align-items: flex-start;
