@@ -5,9 +5,8 @@
 
   body {
     background-image: url('assets/USA_india.jpg');
-    /*background-image: url('assets/colormap_gujarat.jpg');*/
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 
     background-attachment: fixed;
     background-position: center;
