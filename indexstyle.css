@@ -5,12 +5,12 @@
 
   body {
     
-    background-color: rgba(255, 145, 0, 0.3);
+    /*background-color: rgba(255, 145, 0, 0.3);*/
      /*
     background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('assets/USA+india.jpg');
-     
-     background-image: url('assets/USA+india.jpg');
-     */
+    */
+     background-image: url('https://github.com/stri4759/FOGA/blob/main/assets/USA%2Bindia.jpg');
+    
     background-size: cover;
     /*
     background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.5)), url('assets/colormap_gujarat.png');
