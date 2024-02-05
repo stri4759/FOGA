@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<link rel="stylesheet" href="indexstyle.css">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FOGAUSA Events</title>
+    <link rel="icon" type="image/x-icon" href="assets/fogausa.png">
+  <!-- Script for including Navigation Bar and footer files-->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain attribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <!-- Navigation Bar-->
+  <div w3-include-html="navbar.html"></div>
+  <!-- Body of the Page -->
+  <pre>
+    <p>
+
+
+        
+    </p>
+</pre>
+
+    <h1><b>FOGA-USA Past Events</b></h1>
+    <br>
+    <br>
+    <br>
+    <img src="assets/fogausa.png" alt="FOGA-USA"
+        style="display:block;margin-left:auto; margin-right:auto; width:300px; height:300px;">
+    <!-- Mission of the company-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <!--events-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  
+    <!--Start of photo gallery   -->
+<div class="container">
+
+  <h1 class="heading">Past Events <span> Pictures </span></h1>
+  <h2 class="heading">India Heritage Tour <span></span></h2>
+	<div class="gallery">
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/e6d5fb85-c994-4243-a1e0-21bbdeb84a14.jpeg" >
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/eb0f61d7-80c2-4b02-97f1-3e747030eed7.jpeg" >
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/c96a460e-d0ae-4374-86f1-29412efb8599.jpeg" >
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/9a1c6afd-8372-4955-8343-341b924ea01e.jpeg" >
+		</div>
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/24da4b5e-7337-4cbf-a9c9-6909e1845300.jpeg" >
+		</div>
+	</div>
+	
+  <h2 class="heading">SGCCI Global Connect 2024<span></span></h2>
+	<div class="gallery">
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/5e9d1efe-d334-45e7-8757-da44918dc641.jpeg" >
+		</div>
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/41484b84-7789-4544-ad14-a1f12cc22987.jpeg" >
+		</div>
+    	<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/31420656-0b5f-4c04-9a91-73904a185e06.jpeg" >
+		</div>
+	</div>
+
+  <h2 class="heading">Meeting with Taranjit Singh Sandhu Ambassador of India to the USA<span></span></h2>
+	<div class="gallery">
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/74b813a5-bba3-43b8-a6ba-a82e0932ba53.jpeg" >
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/454cdce8-ebd4-4f73-abbd-fd930142dc65.jpeg" >
+		</div>
+	</div>
+
+  <h2 class="heading">FOGAUSA Inauguration Ceremony, <br>Shri Parshottam Rupala, <br>Minister of State for Animal Husbandry, Dairying and Fisheries of India.<span></span></h2>
+	<div class="gallery">
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/6f43eac9-4bce-444e-ad2e-eb80b00aef5a.jpeg" >
+		</div>
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/baca63b7-536a-4fe9-91c8-cb7fda3c0521.jpeg" >
+		</div>
+	</div>
+	
+  <h2 class="heading">FOGAUSA at BAPS New temple, New Jersey</h2>
+	<div class="gallery">
+		<div class="gallery-item">
+			<img class="gallery-image" src="assets/India_tour_pics/ac152709-79c9-41ea-b0ee-cee6f414faec.jpeg" >
+		</div>
+	</div>
+</div>
+<br><br><br><br>
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+  
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+</style>
+    <div class="footer">
+    <!-- Foot Note-->
+    <div w3-include-html="footerfile.html"> </div>
+    <script> includeHTML(); </script>
+</body>
+
+</html>
